@@ -28,7 +28,6 @@ public class CameraFollow : MonoBehaviour
         cameraPosition.z = Target.position.z - DistanceFromPlayer;
         //transform.Translate(Target.position.x, 0, Target.position.z-DistanceFromPlayer);
         transform.position=cameraPosition;
-        Debug.Log(cameraPosition);
     }
     private void LateUpdate()
     {
