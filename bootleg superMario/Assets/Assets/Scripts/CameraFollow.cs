@@ -8,12 +8,12 @@ public class CameraFollow : MonoBehaviour
     public float DistanceFromPlayer = 7.0f;
     
 
-    public static float  CameraY = 5.0f;
+    public float  CameraY = 5.0f;
     Vector3 cameraPosition;
     // Start is called before the first frame update
     void Start()
     {
-       // cameraPosition = transform.position;
+        cameraPosition = transform.position;
 
     }
 

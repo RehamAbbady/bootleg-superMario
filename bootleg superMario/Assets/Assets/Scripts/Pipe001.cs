@@ -12,7 +12,7 @@ public class Pipe001 : MonoBehaviour
     public GameObject MainCam;
     public GameObject SecondCam;
     public GameObject MainPlayer;
-
+    public GameObject FadeScreen;
     void OnTriggerEnter(Collider col)
     {
         StoodOn = 1;
@@ -44,11 +44,21 @@ public class Pipe001 : MonoBehaviour
 
     IEnumerator WaitingForPipe()
     {
+        FadeScreen.SetActive(true);
         PipeEntry.GetComponent<Animator>().enabled = true;
-        yield return new WaitForSeconds(2F);
+        yield return new WaitForSeconds(1.5F);
+        FadeScreen.GetComponent<Animator>().enabled = true;
+        yield return new WaitForSeconds(0.495F);
+        FadeScreen.GetComponent<Animator>().enabled = false;
         PipeEntry.GetComponent<Animator>().enabled = false;
-        SecondCam.SetActive(true);
+       
+        MainPlayer.transform.position = new Vector3(7.35F, -29, -0.24F);
+        FadeScreen.GetComponent<Animator>().enabled = true;
+        yield return new WaitForSeconds(0.495F);
+        PipeEntry.GetComponent<Animator>().enabled = false;
+        FadeScreen.SetActive(false);
         MainCam.SetActive(false);
-        MainPlayer.transform.position = new Vector3(11, -17, 0.5F);
+        SecondCam.SetActive(true);
+
     }
 }
