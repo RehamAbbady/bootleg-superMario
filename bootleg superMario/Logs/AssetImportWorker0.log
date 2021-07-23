@@ -443,3 +443,27 @@ Received Import Request.
 Start importing Assets/Assets/Scripts/GlobalCoins.cs using Guid(44b1bb82d7fbbef46951cca07ab382aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f8782eb91974a183b9049d3eca0db0') in 0.005141 seconds
   Import took 0.112219 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000480 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.638 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1129 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.3 MB.
+System memory in use after: 61.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1660.
+Total: 1.516000 ms (FindLiveObjects: 0.201400 ms CreateObjectMapping: 0.044400 ms MarkObjects: 1.224200 ms  DeleteObjects: 0.045100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
